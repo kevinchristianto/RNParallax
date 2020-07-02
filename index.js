@@ -329,7 +329,7 @@ class RNParallax extends Component {
         scrollEventThrottle={scrollEventThrottle}
         onScroll={Animated.event(
           [{ nativeEvent: { contentOffset: { y: scrollY } } }],
-          {useNativeDriver: true}
+          {useNativeDriver: false}
         )}
         {...scrollViewProps}
       >
